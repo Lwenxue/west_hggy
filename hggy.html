@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>花港观鱼</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 	</head>
 	<style>
 		body {
@@ -44,6 +45,8 @@
 		  text-decoration: none;
 		  z-index: 9999;
 		}
+		
+		
 		.menu {
 		  width: 25%;
 		  height: 100vh;
@@ -104,7 +107,7 @@
 			padding: 5px 10px;
 		}
 		.hggy h2{
-			text-align:center;
+			text-align: center;
 		}
 		.hg{
 			width: 25%;
@@ -148,6 +151,37 @@
 			float: right;
 			margin-right: 10px;
 		}
+		/* 定义箭头样式 */
+		.arrow {
+		  font-size: 20px;
+		  vertical-align: middle;
+		}
+		
+		/* 定义按钮样式 */
+		.button {
+		  display: inline-block;
+		  padding: 5px 8px;
+		  border: none;
+		  border-radius: 3px;
+		  background-color: #949594;
+		  color: white;
+		  cursor: pointer;
+		  font-size: 8px;
+		}
+		.pagination  {
+		  position: fixed;
+		  bottom: 20px;
+		  left: 50%;
+		  transform: translateX(-50%);
+		}
+		
+		/* 定义按钮 hover 状态的样式 */
+		.button:hover {
+		  background-color: #959695;
+		}
+		.button i {
+		      font-size: 8px; /* 这里设置图标的大小 */
+		    }
 	</style>
 	<body>
 		<div class="container">
@@ -278,6 +312,22 @@
 			起，染红半个湖面，蔚为壮观。在这里纵情鱼趣，人知鱼之乐，鱼知人之情，人鱼相悦，其乐融融。红鲤，也叫火鲤，鲤科，分布广泛，可在各类水域
 			生活。是养殖的主要对象，全年均有生产，以春秋两季产量较高。体延长，侧扁，背部隆起。口下位，有吻须和颌须各1对。鳃耙短。腹部圆。鳞片大而
 			圆。侧线明显，微弯。尾鳍深叉形。体色红。</p>
+			<div class="pagination">
+			    <a href="https://lwenxue.github.io/west_sfcy/sfcy.html" class="prev">
+					<!-- 上一页按钮 -->
+				  <button class="button" onclick="goToPreviousPage()">
+					<i class="arrow fas fa-chevron-left"></i>
+					上一页
+				  </button>
+				</a>
+			    <a href="https://lwenxue.github.io/west_styy/styy.html" class="next">
+					<!-- 下一页按钮 -->
+					<button class="button" onclick="goToNextPage()">
+										下一页
+					<i class="arrow fas fa-chevron-right"></i>
+					</button>
+				</a>
+			</div>
 		</div>
 	</body>
 	<script>
